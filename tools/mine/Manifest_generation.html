@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--styles-->
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/button.css" />
+    <link rel="stylesheet" href="../styles/side.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css" />
+    <!--scripts-->
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/generate.js"></script>
+    <script src="../scripts/file.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>しゃー</title>
+    <!--アイコン-->
+    <link rel="icon" type="image/png" href="../image/icon/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="../image/icon/favicon.png" />
+    <link rel="apple-touch-icon" href="../image/icon/apple-touch-icon.png" />
+  </head>
+  <body>
+    <!--ページトップボタン-->
+    <div id="page_top"><a href="#"></a></div>
+    <!--本文-->
+    <div class="mine">
+      <div>
+        <h1 class="title"><span class="mgr-10">Manifest generation</span></h1>
+        <p>
+          Format version<span class="mgr-10"><input type="text" id="fv" class="text-box_2" placeholder="2" /></span>
+        </p>
+        <p>
+          Pack name<span class="mgr-10"><input type="text" id="name" class="text" placeholder="undefined" /></span>
+        </p>
+        <p>
+          Description<span class="mgr-10"><input type="text" id="description" class="text" placeholder="undefined" /></span>
+        </p>
+        <p>
+          Version<span class="mgr-10"><input type="text" id="v-1" class="text-box_2" placeholder="1" /><input type="text" id="v-2" class="text-box_2" placeholder="0" /><input type="text" id="v-3" class="text-box_2" placeholder="0" /></span>
+        </p>
+        <p>
+          Min engine version<span class="mgr-10"><input type="text" id="mv-1" class="text-box_2" placeholder="1" /><input type="text" id="mv-2" class="text-box_2" placeholder="0" /><input type="text" id="mv-3" class="text-box_2" placeholder="0" /></span>
+        </p>
+        <p>
+          Pack type
+          <select id="type">
+            <option value="r">Resources</option>
+            <option value="b">Data</option>
+            <option value="w">World_template</option>
+          </select>
+        </p>
+        <p><a class="button" onclick="Manifest()">manifest.jsonを生成</a></p>
+        <div class="hidden_box">
+          <label for="label1">説明を表示</label>
+          <input type="checkbox" id="label1" />
+          <div class="hidden_show">
+            <!--非表示ここから-->
+            <p>このページではマインクラフトbeのmanifest.jsonを生成します <br />名前、説明、パックタイプを選択してボタンを押すと生成できます <br />名前は必ず入れてください <br />Format versionは基本的に入れなくて大丈夫ですが、ワールドテンプレートの場合は1にしてください <br /><span class="mini">説明は入れなくても大丈夫です。名前を入れないとエラーがでます</span></p>
+            <!--ここまで-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--ふっだ-->
+    <div class="footer">
+      <p>
+        しゃー<br />
+        お問い合わせ
+      </p>
+      <p>
+        <a href="https://twitter.comH2DDH" target="_blank" class="ri">Twitter</a> ID:H2DDH<br />
+        <a href="https://discord.gg/tk6bJaG" target="_blank" class="ri">Discord</a> ID:シュー#8493<br />
+        <span class="mini">&copy; 2020〜</span>
+      </p>
+    </div>
+  </body>
+</html>
